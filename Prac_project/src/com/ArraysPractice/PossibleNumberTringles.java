@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class PossibleNumberTringles {
 	public static void main(String[] args) {
-		int arr[] = new int[] {5, 3, 6, 2, 4,7};
+		int arr[] = new int[] {10, 21, 22, 100, 101, 200, 300};
 		Arrays.sort(arr);
 		int count = 0;
 		int n =arr.length;
@@ -13,12 +13,11 @@ public class PossibleNumberTringles {
 	        for (int j = i+1; j < n; ++j)
 	        {
 	            int k = j+1;
-	            while (k < n && arr[i] + arr[j] > arr[k])
+	            while (k < n && arr[i] + arr[j] > arr[k]) 
 	            {
 	               k = k + 1;
-	               count++;
 	            }
-	           // count = count + k - j - 1;
+	            count = count + k - j - 1;
 	        }
 	    }
 		

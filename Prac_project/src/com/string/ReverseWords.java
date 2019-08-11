@@ -10,6 +10,19 @@ public class ReverseWords {
 		String str1="";
 		String[] arr=str.split("\\.");
 		
+		String[] arr1=str.split("\\.");
+		int len=arr1.length;
+		int half=len/2;
+		String temp="";
+		for(int i=0;i<half; i++) {
+			temp=arr1[i];
+			arr1[i]=arr1[len-i-1];
+			arr1[len-i-1]=temp;
+		}
+		
+		System.out.println("After reverse:  "+Arrays.toString(arr1));
+		
+		
 		//using list
 		/*
 		 * List<String>list=Arrays.asList(arr); Collections.reverse(list);
