@@ -24,6 +24,7 @@ public class FirstRepeatingAndNonRepeating {
 				map.put(ch, 1);
 		}
 		
+		System.out.println(map);
 		
 		for(Character ch : arr) {
 			//1st repeating character
@@ -45,12 +46,7 @@ public class FirstRepeatingAndNonRepeating {
 				set.add(ch);
 		}
 		
-		Set<Entry<Character,Integer>> entry=map.entrySet();
-		for(Entry<Character,Integer> e: entry) {
-			System.out.println(e.getKey()+"  "+e.getValue());
-		}	
-		
-		System.out.println("Repeat  " +repeat+"  Non-Repeat  " +non_repeat);
+		System.out.println("Repeat:  " +repeat+"  Non-Repeat:  " +non_repeat);
 		System.out.println(set);
 	}
 

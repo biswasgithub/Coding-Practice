@@ -102,7 +102,7 @@ public class MapClass {
 		Map<Integer,Integer> map2= new HashMap<Integer, Integer>(arrList.size());
 		
 		int count=0;
-		Iterator<Map.Entry<Integer, Integer>> itr=map2.entrySet().iterator();
+		//Iterator<Map.Entry<Integer, Integer>> itr=map2.entrySet().iterator();
 		for(Integer i: arrList) {
 			if(map2.containsKey(i)) {
 				map2.put(i, map2.get(i)+1);
@@ -113,5 +113,15 @@ public class MapClass {
 		}
 		System.out.println(map2);
 		
+		Student2 stu1 = new Student2(1,"Jhon");
+		Student2 stu2 = new Student2(2, "Akki");
+		System.out.println(stu2+"  "+stu2.hashCode());
+		stu2.setRoll(3);
+		stu2.setName("rahul");
+		
+		
+		System.out.println(stu2 +"  " +stu2.hashCode());
 	}
+	
+	
 }

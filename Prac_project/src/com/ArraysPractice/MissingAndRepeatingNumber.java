@@ -14,6 +14,7 @@ public class MissingAndRepeatingNumber {
 	public static void main(String[] args) {
 		int[] arr= {2,1,3,8,6,1,4,3,5};
 		Arrays.sort(arr);
+		System.out.println(Arrays.toString(arr));
 		
 		List<Integer> multipleTimes=new ArrayList<Integer>();
 		List<Integer> missingNumbers=new ArrayList<Integer>();
@@ -51,11 +52,27 @@ public class MissingAndRepeatingNumber {
 			}
 		}
 		
+		System.out.println(map);
+		
 		for(int i=1;i<length;i++) {
 			if(map.get(i)==null) {
 				missingNumbers1.add(i);
 			}
 		}
+		
+		// 1. Get the sum of numbers which is total = n*(n+1)/2
+		// 2. Subtract all the numbers from sum and you will get the missing number
+		
+	/*	static int getMissingNo(int a[], int n) 
+	    { 
+	        int i, total; 
+	        total = (n + 1) * (n + 2) / 2; 
+	        for (i = 0; i < n; i++) 
+	            total -= a[i]; 
+	        return total; 
+	    } 
+	*/
+		
 		System.out.println(multipleTimes1 +"  "+missingNumbers1);
 	}
 
