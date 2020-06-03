@@ -5,10 +5,11 @@ import java.util.Scanner;
 
 public class RemoveDuplicateCharacter {
 	
-	public static void removeDuplicate(String str) {
+	public static void removeDuplicate(String inputString) {
+		char[] strArray = inputString.replaceAll("\\s+", "").toCharArray(); 
 		LinkedHashSet<Character> hs=new LinkedHashSet<Character>();
-		for(int i=0; i<str.length()-1; i++) {
-			hs.add(str.charAt(i));
+		for(char ch: strArray) {
+			hs.add(ch);
 		}
 		
 		for(Character c: hs) {
@@ -22,6 +23,6 @@ public class RemoveDuplicateCharacter {
 		System.out.println("Input: "+ str);
 		sc.close();
 		
-		removeDuplicate(str);
+		removeDuplicate("Java");
 	}
 }
