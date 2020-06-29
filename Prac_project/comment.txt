@@ -1,6 +1,11 @@
 
 this is master code...
 
+This is feature_day_6 code
+This is feature_day_6 code
+This is feature_day_6 code
+This is feature_day_6 code
+
 This is feature_day_7 code
 This is feature_day_7 code
 This is feature_day_7 code
