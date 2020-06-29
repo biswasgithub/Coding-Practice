@@ -11,12 +11,7 @@ public class RemoveDupCharacter {
 		String a = in.nextLine();
 		
 		System.out.println(a);
-		
-		//String a = "azxxzyyyddddyzzz";
-		//String a  = "cbbbaaaabbbccc";
-		/*
-		 * 
-		 */
+
 	    
 	    String result = removeData(a);
 	    
